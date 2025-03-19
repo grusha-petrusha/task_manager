@@ -1,20 +1,16 @@
-
-FROM maven:3.9.9-eclipse-temurin-17 AS builder
+FROM maven:3.8.3-openjdk-17 AS build
 
 WORKDIR /app
 
-COPY pom.xml
-
-RUN mvn dependency:go-offline
-
+COPY pom.xml .
 COPY src ./src
 
-RUN mvn clean package -DskipTests
+RUN mvn clean install
 
-FROM eclipse-temurin:17-jdk
+FROM openjdk:17-jdk-slim
 
 WORKDIR /app
 
-COPY --from=builder /app/target/*.jar app.jar
+COPY --from=build /app/target/task_manager-app-1.0-SNAPSHOT.jar ./app.jar
 
-ENTRYPOINT["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]
