@@ -1,1 +1,14 @@
 /home/anastasia/Projects/task_manager-app/src/main/java/com/task_manager/app/App.java
+/home/anastasia/Projects/task_manager-app/src/main/java/com/task_manager/app/config/JwtAuthenticationFilter.java
+/home/anastasia/Projects/task_manager-app/src/main/java/com/task_manager/app/config/JwtService.java
+/home/anastasia/Projects/task_manager-app/src/main/java/com/task_manager/app/config/SecurityConfig.java
+/home/anastasia/Projects/task_manager-app/src/main/java/com/task_manager/app/controller/AuthController.java
+/home/anastasia/Projects/task_manager-app/src/main/java/com/task_manager/app/controller/TaskController.java
+/home/anastasia/Projects/task_manager-app/src/main/java/com/task_manager/app/exception/GlobalExceptionHandler.java
+/home/anastasia/Projects/task_manager-app/src/main/java/com/task_manager/app/model/Task.java
+/home/anastasia/Projects/task_manager-app/src/main/java/com/task_manager/app/model/User.java
+/home/anastasia/Projects/task_manager-app/src/main/java/com/task_manager/app/repository/TaskRepository.java
+/home/anastasia/Projects/task_manager-app/src/main/java/com/task_manager/app/repository/UserRepository.java
+/home/anastasia/Projects/task_manager-app/src/main/java/com/task_manager/app/service/CustomUserDetailsService.java
+/home/anastasia/Projects/task_manager-app/src/main/java/com/task_manager/app/service/TaskService.java
+/home/anastasia/Projects/task_manager-app/src/main/java/com/task_manager/app/service/UserService.java
